@@ -6,7 +6,7 @@
   <meta name="description" content="{{website.description | strip }}">
   <meta name="author" content="{{admin.name | strip}}">
   <!-- TODO favicon - -->
-  <link rel="icon" href="/assets/ico/favicon.ico">
+  <link rel="icon" href="{{ '/assets/ico/favicon.ico' | relative_url }}">
 
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
@@ -17,12 +17,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@900&family=Comfortaa&display=swap" rel="stylesheet"> 
 
-  <link rel="stylesheet" href="assets/css/aoe.css">
+  <link rel="stylesheet" href="{{ 'assets/css/aoe.css' | relative_url }}">
 
-  <link href="/assets/css/icon-font-min.css" rel="stylesheet">
+  <link href="{{ '/assets/css/icon-font-min.css' | relative_url }}" rel="stylesheet">
 
 
-  <script src="assets/js/aoe-standalone.js"></script>
+  <script src="{{ 'assets/js/aoe-standalone.js' | relative_url }}"></script>
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -35,7 +35,7 @@
   </title>
 
   <!-- ** CSS ** -->
-  <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="{{ '/assets/css/styles.css' | relative_url }}">
 
   <script>
     document.addEventListener("DOMContentLoaded", function() { 
