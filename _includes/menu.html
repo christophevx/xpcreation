@@ -1,0 +1,62 @@
+<header class="site-navbar" role="banner">
+
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-11 col-xl-2">
+                <img src="assets/images/logo.png" width="150px" />
+            </div>
+            <div class="col-12 col-md-10 d-none d-xl-block">
+                <nav class="site-navigation position-relative text-right" role="navigation">
+
+                    <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
+
+                        {%- for link in site.navbar-links -%} {%- if link[1].first %}
+                        <li class="has-children">
+                            <a href=""><span>{{ link[0] }}</span></a>
+                            <ul class="dropdown arrow-top">
+                                {%- for childlink in link[1] -%}
+                                    {%- for linkparts in childlink %}
+                                        <li><a href="{{ linkparts[1] | relative_url }}">{{ linkparts[0] }}</a></li>
+                                    {%- endfor -%}
+                                {%- endfor %}
+                            </ul>
+                        </li>
+                        {% else %}
+                        <li><a href="{{ link[1] | relative_url }}"><span>{{ link[0] }}</span></a></li>
+                        {%- endif -%} {%- endfor -%}
+                        <li class="active"><a href="index.html"><span>Home</span></a></li>
+                        <li class="has-children">
+                            <a href="about.html"><span>Dropdown</span></a>
+                            <ul class="dropdown arrow-top">
+                                <li><a href="#">Menu One</a></li>
+                                <li><a href="#">Menu Two</a></li>
+                                <li><a href="#">Menu Three</a></li>
+                                <li class="has-children">
+                                    <a href="#">Dropdown</a>
+                                    <ul class="dropdown">
+                                        <li><a href="#">Menu One</a></li>
+                                        <li><a href="#">Menu Two</a></li>
+                                        <li><a href="#">Menu Three</a></li>
+                                        <li><a href="#">Menu Four</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="listings.html"><span>Listings</span></a></li>
+                        <li><a href="about.html"><span>About</span></a></li>
+                        <li><a href="blog.html"><span>Blog</span></a></li>
+                        <li><a href="contact.html"><span>Contact</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+
+            <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+
+        </div>
+
+    </div>
+    </div>
+
+</header>

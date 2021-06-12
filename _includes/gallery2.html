@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="grid product row">
+        <div class="col-xs-12 col-md-7">
+            <div class="product-gallery">
+                <div class="product-image product-image{{ include.post.title | remove: " " }}">
+                    <img class="active" src="">
+                </div>
+                <ul class="image-list image-list{{ include.post.title | remove: " " }}">
+                    {% capture gallery_path %}assets/images/{{ include.post.title}}/{% endcapture %} {% for image in site.static_files %} {% if image.path contains gallery_path %}
+                    <li class="image-item">
+                        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                    </li>{% endif %} {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-5 gallerytextcontainer">
+            <div class="gallerytextcontent metal">
+                <h1 data-heading="{{ include.post.title }}">{{ include.post.title }}</h1>
+                <hr/>
+                <div class="description">
+                    {{ include.post.content }}
+                </div>
+            </div>
+        </div>
+        <img class="vis vis1" src="/assets/images/vis.png" />
+        <img class="vis vis2" src="/assets/images/vis.png" />
+        <img class="vis vis3" src="/assets/images/vis.png" />
+        <img class="vis vis4" src="/assets/images/vis.png" />
+    </div>
+</div>
+
+<script type="text/javascript">
+    const activeImage{{ include.post.title | remove: " " }} = document.querySelector(".product-image{{ include.post.title | remove: " " }} .active");
+    const productImages{{ include.post.title | remove: " " }} = document.querySelectorAll(".image-list{{ include.post.title | remove: " " }} img");
+    
+    function changeImage{{ include.post.title | remove: " " }}(e) {
+      activeImage{{ include.post.title | remove: " " }}.src = e.target.src;
+      productImages{{ include.post.title | remove: " " }}.forEach(image => image.classList.remove("imgselected"));
+      e.target.classList.add("imgselected");
+      console.log(e.target);
+    }
+    
+    productImages{{ include.post.title | remove: " " }}.forEach(image => image.addEventListener("click", changeImage{{ include.post.title | remove: " " }}));
+    activeImage{{ include.post.title | remove: " " }}.src = productImages{{ include.post.title | remove: " " }}[0].src;
+    productImages{{ include.post.title | remove: " " }}[0].classList.add("imgselected");
+</script>

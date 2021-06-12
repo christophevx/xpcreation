@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+{% for post in site.facebook %}
+    <div class="gallerycontainer">
+    {% include gallery2.html post=post %}
+    </div>
+{% endfor %}
+
+{{ content }}

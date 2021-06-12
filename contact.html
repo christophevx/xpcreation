@@ -1,0 +1,48 @@
+---
+title: Contact
+layout: default
+video: assets/xpcreations.mp4
+order: 9
+---
+
+<div class="container-contact100">
+    <div class="wrap-contact100">
+        <form action="https://api.staticforms.xyz/submit" method="post" class="contact100-form validate-form">
+
+            <input type="hidden" name="accessKey" value="2dab56a8-a77c-4b9b-b5c7-fc6401b26a6b"> <!-- Required -->
+
+            <h1>Contactez-nous !</h1>
+
+            <div class="wrap-input100 validate-input" data-validate="Votre nom est requis">
+                <input class="input100" id="name" type="text" name="name" placeholder="Votre nom">
+                <label class="label-input100" for="name">
+                    <span class="lnr lnr-user"></span>
+                </label>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate = "Une adresse email valide est requise">
+                <input class="input100" id="email" type="text" name="email" placeholder="Votre email">
+                <label class="label-input100" for="email">
+                    <span class="lnr lnr-envelope"></span>
+                </label>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate = "Le numéro de téléphone est requis">
+                <input class="input100" id="phone" type="text" name="phone" placeholder="Votre numéro de téléphone">
+                <label class="label-input100" for="phone">
+                    <span class="lnr lnr-phone-handset"></span>
+                </label>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate = "Le message est requis">
+                <textarea class="input100" name="message" placeholder="Votre message..."></textarea>
+            </div>
+            <input type="hidden" name="redirectTo" value="https://example.com/contact/success"> <!-- Optional -->
+            <div class="container-contact100-form-btn">
+                <div class="wrap-contact100-form-btn">
+                    <input type="submit" value="Envoyer" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

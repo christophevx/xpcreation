@@ -1,0 +1,22 @@
+<div class="videoheader">
+    <div class="overlay"></div>
+
+    {% if page.video %}
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="{{ page.video }}" type="video/mp4">
+    </video>
+    {% endif %}
+
+    {% if page.image %}
+    <img src="{{ page.image }}">
+    {% endif %}
+
+    <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 text-white">
+                <h1 class="display-3">{{ page.title }}</h1>
+                <p class="lead mb-0">{{ page.subtitle }}</p>
+            </div>
+        </div>
+    </div>
+</div>
