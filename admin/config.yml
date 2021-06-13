@@ -1,7 +1,6 @@
 backend:
-  name: github
+  name: git-gateway
   branch: master
-  repo: christophevx/xpcreation
 media_folder: 'assets/images'
 collections:
   - name: 'blog'
