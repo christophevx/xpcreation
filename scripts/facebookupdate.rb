@@ -6,8 +6,8 @@ id = "#{ARGV[0]}"
 pageid = "#{ARGV[1]}"
 
 FacebookAds.configure do |config|
-    config.access_token = '#{ARGV[2]}'
-    config.app_secret = '#{ARGV[3]}'
+    config.access_token = "#{ARGV[2]}"
+    config.app_secret = "#{ARGV[3]}"
 end
 
 user = FacebookAds::User.get(id ,'')
