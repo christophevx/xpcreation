@@ -17,4 +17,4 @@ jobs:
           ruby-version: 2.6 # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       - run: bundle exec rake
-      - run: ruby ./scripts/facebookupdate.rb ${{ FACEBOOK_ID }} ${{ FACEBOOK_PAGE_ID }} ${{ FACEBOOK_ACCESS_TOKEN }} ${{ FACEBOOK_APP_SECRET }}
+      - run: ruby ./scripts/facebookupdate.rb ${{ secrets.FACEBOOK_ID }} ${{ secrets.FACEBOOK_PAGE_ID }} ${{ secrets.FACEBOOK_ACCESS_TOKEN }} ${{ secrets.FACEBOOK_APP_SECRET }}
