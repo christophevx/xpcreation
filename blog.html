@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- TODO favicon - -->
+  <link rel="icon" href="/xpcreation/assets/ico/favicon.ico">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="/xpcreation/assets/fonts/icomoon/style.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@900&family=Comfortaa&display=swap" rel="stylesheet"> 
+
+  <link rel="stylesheet" href="/xpcreation/assets/css/aoe.css">
+
+  <link href="/xpcreation/assets/css/icon-font-min.css" rel="stylesheet">
+
+
+  <script src="/xpcreation/assets/js/aoe-standalone.js"></script>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <title>
+    
+      Blog |
+    
+    
+  </title>
+
+  <!-- ** CSS ** -->
+  <link rel="stylesheet" type="text/css" href="/xpcreation/assets/css/styles.css">
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() { 
+      AOS.init();
+    });
+  </script>
+
+</head>
+<body>
+    
+    <div class="site-mobile-menu">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"><ul class="site-nav-wrap">
+                  <li class="active"><a href="index.html"><span>Home</span></a></li>
+                  <li class="has-children"><span class="arrow-collapse collapsed" data-toggle="collapse" data-target="#collapseItem0" aria-expanded="false"></span>
+                    <a href="about.html"><span>Dropdown</span></a>
+                    <ul class="collapse" id="collapseItem0" style="">
+                      <li><a href="#">Menu One</a></li>
+                      <li><a href="#">Menu Two</a></li>
+                      <li><a href="#">Menu Three</a></li>
+                      <li class="has-children"><span class="arrow-collapse collapsed" data-toggle="collapse" data-target="#collapseItem1"></span>
+                        <a href="#">Dropdown</a>
+                        <ul class="collapse" id="collapseItem1">
+                          <li><a href="#">Menu One</a></li>
+                          <li><a href="#">Menu Two</a></li>
+                          <li><a href="#">Menu Three</a></li>
+                          <li><a href="#">Menu Four</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="listings.html"><span>Listings</span></a></li>
+                  <li><a href="about.html"><span>About</span></a></li>
+                  <li><a href="blog.html"><span>Blog</span></a></li>
+                  <li><a href="contact.html"><span>Contact</span></a></li>
+                </ul></div>
+      </div>
+
+    
+
+<header class="site-navbar" role="banner">
+
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-11 col-xl-2">
+                <img src="/xpcreation/assets/images/logo.png" width="150px" />
+            </div>
+            <div class="col-12 col-md-10 d-none d-xl-block">
+                <nav class="site-navigation position-relative text-right" role="navigation">
+
+                    <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
+                        
+                        
+                            <li ><a href='/xpcreation/feed.xml'><span></span></a></li>
+                            <li ><a href='/xpcreation/'><span>Accueil</span></a></li>
+                            
+                                
+                                
+                                <li class="has-children">
+                                <a href='/Nos%20r%C3%A9alisations/'><span>Nos réalisations</span></a>
+                                <ul class="dropdown arrow-top"><li ><a href='/xpcreation/Nos%20r%C3%A9alisations/'><span>Nos réalisations</span></a></li>
+                            <li ><a href='/xpcreation/Nos%20r%C3%A9alisations/index%20copy.html'><span>bleh 2</span></a></li>
+                            <li ><a href='/xpcreation/Nos%20r%C3%A9alisations/index%20copy%202.html'><span>bleh 3</span></a></li>
+                            
+                                
+                                </li>
+                                </ul>
+                                <li ><a href='/xpcreation/contact.html'><span>Contact</span></a></li>
+                            <li class="active"><a href='/xpcreation/blog.html'><span>Blog</span></a></li></ul>
+                </nav>
+            </div>
+
+
+            <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+
+        </div>
+
+    </div>
+    </div>
+</header>
+
+<script>
+$(document).ready(() => {
+  $('.site-menu-toggle').click(()=>{
+    $( "body" ).toggleClass( "offcanvas-menu" );
+  });
+});
+</script>
+ <div class="videoheader">
+    <div class="overlay"></div>
+
+    
+
+    
+
+    <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 text-white">
+                <h1 class="display-3">Blog</h1>
+                <p class="lead mb-0"></p>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <div class="gallerycontainer">
+    <div class="container">
+    <div class="grid product row">
+        <div class="col-xs-12 col-md-7">
+            <div class="product-gallery">
+                <div class="product-image product-imageUncommentairepourlesphotos">
+                    <img class="active" src="">
+                </div>
+                <ul class="image-list image-listUncommentairepourlesphotos">
+                                                                                                       
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-5 gallerytextcontainer">
+            <div class="gallerytextcontent metal">
+                <h1 data-heading="Un commentaire pour les photos">Un commentaire pour les photos</h1>
+                <hr/>
+                <div class="description">
+                    
+
+                </div>
+            </div>
+        </div>
+        <img class="vis vis1" src="/assets/images/vis.png" />
+        <img class="vis vis2" src="/assets/images/vis.png" />
+        <img class="vis vis3" src="/assets/images/vis.png" />
+        <img class="vis vis4" src="/assets/images/vis.png" />
+    </div>
+</div>
+
+<script type="text/javascript">
+    const activeImageUncommentairepourlesphotos = document.querySelector(".product-imageUncommentairepourlesphotos .active");
+    const productImagesUncommentairepourlesphotos = document.querySelectorAll(".image-listUncommentairepourlesphotos img");
+    
+    function changeImageUncommentairepourlesphotos(e) {
+      activeImageUncommentairepourlesphotos.src = e.target.src;
+      productImagesUncommentairepourlesphotos.forEach(image => image.classList.remove("imgselected"));
+      e.target.classList.add("imgselected");
+      console.log(e.target);
+    }
+    
+    productImagesUncommentairepourlesphotos.forEach(image => image.addEventListener("click", changeImageUncommentairepourlesphotos));
+    activeImageUncommentairepourlesphotos.src = productImagesUncommentairepourlesphotos[0].src;
+    productImagesUncommentairepourlesphotos[0].classList.add("imgselected");
+</script>
+    </div>
+
+    <div class="gallerycontainer">
+    <div class="container">
+    <div class="grid product row">
+        <div class="col-xs-12 col-md-7">
+            <div class="product-gallery">
+                <div class="product-image product-imageEncoreuntruc,justepourtester">
+                    <img class="active" src="">
+                </div>
+                <ul class="image-list image-listEncoreuntruc,justepourtester">
+                                                                                                       
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-5 gallerytextcontainer">
+            <div class="gallerytextcontent metal">
+                <h1 data-heading="Encore un truc, juste pour tester">Encore un truc, juste pour tester</h1>
+                <hr/>
+                <div class="description">
+                    
+
+                </div>
+            </div>
+        </div>
+        <img class="vis vis1" src="/assets/images/vis.png" />
+        <img class="vis vis2" src="/assets/images/vis.png" />
+        <img class="vis vis3" src="/assets/images/vis.png" />
+        <img class="vis vis4" src="/assets/images/vis.png" />
+    </div>
+</div>
+
+<script type="text/javascript">
+    const activeImageEncoreuntruc,justepourtester = document.querySelector(".product-imageEncoreuntruc,justepourtester .active");
+    const productImagesEncoreuntruc,justepourtester = document.querySelectorAll(".image-listEncoreuntruc,justepourtester img");
+    
+    function changeImageEncoreuntruc,justepourtester(e) {
+      activeImageEncoreuntruc,justepourtester.src = e.target.src;
+      productImagesEncoreuntruc,justepourtester.forEach(image => image.classList.remove("imgselected"));
+      e.target.classList.add("imgselected");
+      console.log(e.target);
+    }
+    
+    productImagesEncoreuntruc,justepourtester.forEach(image => image.addEventListener("click", changeImageEncoreuntruc,justepourtester));
+    activeImageEncoreuntruc,justepourtester.src = productImagesEncoreuntruc,justepourtester[0].src;
+    productImagesEncoreuntruc,justepourtester[0].classList.add("imgselected");
+</script>
+    </div>
+
+    <div class="gallerycontainer">
+    <div class="container">
+    <div class="grid product row">
+        <div class="col-xs-12 col-md-7">
+            <div class="product-gallery">
+                <div class="product-image product-imageUnetableenbois">
+                    <img class="active" src="">
+                </div>
+                <ul class="image-list image-listUnetableenbois">
+                                                                              
+                    <li class="image-item">
+                        <img src="/xpcreation/assets/images/Une table en bois/162171508_2872986719687227_6654064936123448436_n.jpg" alt="image" />
+                    </li>  
+                    <li class="image-item">
+                        <img src="/xpcreation/assets/images/Une table en bois/162173710_2872986746353891_2945704487022334775_n.jpg" alt="image" />
+                    </li>  
+                    <li class="image-item">
+                        <img src="/xpcreation/assets/images/Une table en bois/162521848_2872986773020555_5041587811449193560_n.jpg" alt="image" />
+                    </li>  
+                    <li class="image-item">
+                        <img src="/xpcreation/assets/images/Une table en bois/162528690_2872986709687228_8374613760627053206_n.jpg" alt="image" />
+                    </li>  
+                    <li class="image-item">
+                        <img src="/xpcreation/assets/images/Une table en bois/162931984_2872986699687229_5301656468017367813_n.jpg" alt="image" />
+                    </li>                 
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-5 gallerytextcontainer">
+            <div class="gallerytextcontent metal">
+                <h1 data-heading="Une table en bois">Une table en bois</h1>
+                <hr/>
+                <div class="description">
+                    <p>Quand on a une grande pièce de vie, on se doit d’avoir une grande table centrale 🙂</p>
+
+<p>Imposante avec ses 1,5M X 2M qui se transforme en 1,5M X 3M quand on y installe ses rallonges, elle a toute sa place dans l’espace.</p>
+
+<p>Elle s’accompagne d’un bahut massif et épuré dans le même esprit, le tout harmonisé avec un petit mur de parement en bois massif fait maison.</p>
+
+                </div>
+            </div>
+        </div>
+        <img class="vis vis1" src="/assets/images/vis.png" />
+        <img class="vis vis2" src="/assets/images/vis.png" />
+        <img class="vis vis3" src="/assets/images/vis.png" />
+        <img class="vis vis4" src="/assets/images/vis.png" />
+    </div>
+</div>
+
+<script type="text/javascript">
+    const activeImageUnetableenbois = document.querySelector(".product-imageUnetableenbois .active");
+    const productImagesUnetableenbois = document.querySelectorAll(".image-listUnetableenbois img");
+    
+    function changeImageUnetableenbois(e) {
+      activeImageUnetableenbois.src = e.target.src;
+      productImagesUnetableenbois.forEach(image => image.classList.remove("imgselected"));
+      e.target.classList.add("imgselected");
+      console.log(e.target);
+    }
+    
+    productImagesUnetableenbois.forEach(image => image.addEventListener("click", changeImageUnetableenbois));
+    activeImageUnetableenbois.src = productImagesUnetableenbois[0].src;
+    productImagesUnetableenbois[0].classList.add("imgselected");
+</script>
+    </div>
+
+    <div class="gallerycontainer">
+    <div class="container">
+    <div class="grid product row">
+        <div class="col-xs-12 col-md-7">
+            <div class="product-gallery">
+                <div class="product-image product-imagePost2">
+                    <img class="active" src="">
+                </div>
+                <ul class="image-list image-listPost2">
+                                                              
+                    <li class="image-item">
+                        <img src="/xpcreation/assets/images/Post 2/140298201_2825936101058956_2243981053870783215_n.jpg" alt="image" />
+                    </li>  
+                    <li class="image-item">
+                        <img src="/xpcreation/assets/images/Post 2/140527904_2825936104392289_688688292092313967_n.jpg" alt="image" />
+                    </li>  
+                    <li class="image-item">
+                        <img src="/xpcreation/assets/images/Post 2/140544918_2825936107725622_3942530638629933538_n.jpg" alt="image" />
+                    </li>  
+                    <li class="image-item">
+                        <img src="/xpcreation/assets/images/Post 2/140727173_2825936111058955_7469397789378811751_n.jpg" alt="image" />
+                    </li>  
+                    <li class="image-item">
+                        <img src="/xpcreation/assets/images/Post 2/140728317_2825936091058957_6172624281858126342_n.jpg" alt="image" />
+                    </li>  
+                    <li class="image-item">
+                        <img src="/xpcreation/assets/images/Post 2/140783740_2825936114392288_8662903270071382811_n.jpg" alt="image" />
+                    </li>  
+                    <li class="image-item">
+                        <img src="/xpcreation/assets/images/Post 2/140807055_2825936097725623_5011180346793580384_n.jpg" alt="image" />
+                    </li>  
+                    <li class="image-item">
+                        <img src="/xpcreation/assets/images/Post 2/140842378_2825936094392290_8231525194654820591_n.jpg" alt="image" />
+                    </li>                           
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-5 gallerytextcontainer">
+            <div class="gallerytextcontent metal">
+                <h1 data-heading="Post 2">Post 2</h1>
+                <hr/>
+                <div class="description">
+                    <p>Un beau projet dans une cage d’escalier relativement petite ! 🛠</p>
+
+                </div>
+            </div>
+        </div>
+        <img class="vis vis1" src="/assets/images/vis.png" />
+        <img class="vis vis2" src="/assets/images/vis.png" />
+        <img class="vis vis3" src="/assets/images/vis.png" />
+        <img class="vis vis4" src="/assets/images/vis.png" />
+    </div>
+</div>
+
+<script type="text/javascript">
+    const activeImagePost2 = document.querySelector(".product-imagePost2 .active");
+    const productImagesPost2 = document.querySelectorAll(".image-listPost2 img");
+    
+    function changeImagePost2(e) {
+      activeImagePost2.src = e.target.src;
+      productImagesPost2.forEach(image => image.classList.remove("imgselected"));
+      e.target.classList.add("imgselected");
+      console.log(e.target);
+    }
+    
+    productImagesPost2.forEach(image => image.addEventListener("click", changeImagePost2));
+    activeImagePost2.src = productImagesPost2[0].src;
+    productImagesPost2[0].classList.add("imgselected");
+</script>
+    </div>
+
+
+
+
+</body>
+
+</html>
