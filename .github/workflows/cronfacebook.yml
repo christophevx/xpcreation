@@ -23,4 +23,5 @@ jobs:
       - run: ruby --version
       - run: gem query --local
       - run: ls -lh
+      - run: gem install facebookbusiness
       - run: ruby ./scripts/facebookupdate.rb ${{ secrets.FACEBOOK_ID }} ${{ secrets.FACEBOOK_PAGE_ID }} ${{ secrets.FACEBOOK_ACCESS_TOKEN }} ${{ secrets.FACEBOOK_APP_SECRET }}
