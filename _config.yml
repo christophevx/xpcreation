@@ -36,6 +36,8 @@ collections:
     output: true
   accueil:
     output: true
+  terrasses:
+    output: true
 
 #navbar-links:
   #Accueil: "index"

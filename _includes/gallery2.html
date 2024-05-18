@@ -6,7 +6,7 @@
                     <img class="active" src="">
                 </div>
                 <ul class="image-list image-list{{ include.post.title | remove: " " }}">
-                    {% capture gallery_path %}assets/images/{{ include.post.title}}/{% endcapture %} {% for image in site.static_files %} {% if image.path contains gallery_path %}
+                    {% capture gallery_path %}assets/images/{{ include.collection }}/{{ include.post.title}}/{% endcapture %} {% for image in site.static_files %} {% if image.path contains gallery_path %}
                     <li class="image-item">
                         <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
                     </li>{% endif %} {% endfor %}
@@ -22,10 +22,10 @@
                 </div>
             </div>
         </div>
-        <img class="vis vis1" src="./assets/images/vis.png" />
-        <img class="vis vis2" src="./assets/images/vis.png" />
-        <img class="vis vis3" src="./assets/images/vis.png" />
-        <img class="vis vis4" src="./assets/images/vis.png" />
+        <img class="vis vis1" src="../assets/images/vis.png" />
+        <img class="vis vis2" src="../assets/images/vis.png" />
+        <img class="vis vis3" src="../assets/images/vis.png" />
+        <img class="vis vis4" src="../assets/images/vis.png" />
     </div>
 </div>
 

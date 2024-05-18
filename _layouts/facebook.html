@@ -2,9 +2,11 @@
 layout: default
 ---
 
-{% for post in site.facebook %}
+{% assign collection =  site.collections | where: "label", page.gallery | first %}
+
+{% for post in collection.docs %}
     <div class="gallerycontainer">
-    {% include gallery2.html post=post %}
+    {% include gallery2.html post=post collection=page.gallery %}
     </div>
 {% endfor %}
 
