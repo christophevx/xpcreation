@@ -22,11 +22,11 @@
                                 {% assign current_dir = node.dir %}
                                 {% if current_dir != "/" %}
                                 <li class="has-children">
-                                <a href='{{node.url}}'><span>{{node.title}}</span></a>
+                                <span class="sub">{{ node.dir | url_decode | replace: "/", "" }}</span>
                                 <ul class="dropdown arrow-top">
                                 {%- endif -%}
                             {%- endif -%}
-                            <li {% if node.url == page.url %}class="active"{% endif %}><a href='{{ node.url | relative_url }}'><span>{{node.title}}</span></a></li>
+                            <li{% if node.url == page.url %} class="active"{% endif %}><a href='{{ node.url | relative_url }}'><span>{{node.title}}</span></a></li>
                         {%- endfor -%}
                     </ul>
                 </nav>

@@ -276,6 +276,10 @@ div.videoheader .overlay {
     opacity: 1;
 }
 
+span.sub {
+    color: white;
+}
+
 .site-mobile-menu {
     width: 300px;
     position: fixed;
