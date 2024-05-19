@@ -1,6 +1,6 @@
 ---
 title: Blog
-layout: facebook
+layout: articles
 folder: facebook
 order: 10
 ---

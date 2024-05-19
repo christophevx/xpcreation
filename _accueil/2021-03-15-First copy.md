@@ -15,5 +15,4 @@ Vivamus quis nisl urna. Aliquam porta cursus quam vitae varius. Suspendisse pote
 
 Nunc sed mi velit. Donec pellentesque aliquet tortor eu faucibus. [Maecenas eget nibh maximus,]("/index.php/amenagement-de-jardin") lementum odio quis, venenatis felis. 
 
-<a class="btn btn-primary" href="/index.php/amenagement-de-jardin">En savoir plus</a>
-
+<a class="btn btn-primary" href="./Nos%20r%C3%A9alisations/01%20-%20Escaliers.html">En savoir plus</a>

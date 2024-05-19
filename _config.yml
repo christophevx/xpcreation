@@ -38,6 +38,8 @@ collections:
     output: true
   terrasses:
     output: true
+  escaliers:
+    output: true
 
 #navbar-links:
   #Accueil: "index"
