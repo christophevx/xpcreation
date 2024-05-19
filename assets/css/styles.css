@@ -23,7 +23,7 @@ div.videoheader {
     overflow: hidden;
 }
 
-div.videoheader video, div.videoheader img {
+div.videoheader video, div.videoheader img.imgheader {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -883,4 +883,12 @@ a.socialnetworkbtn {
 
 a.site-menu-toggle {
     text-decoration: none;
+}
+
+img.nextimg {
+    position: relative;
+    bottom: 100px;
+    left: 50%;
+    width: 120px;
+    margin-left: -60px;
 }

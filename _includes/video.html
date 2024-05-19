@@ -8,7 +8,7 @@
     {% endif %}
 
     {% if page.image %}
-    <img src="{{ page.image }}">
+    <img class="imgheader" src="{{ page.image }}">
     {% endif %}
 
     <div class="container h-100">
@@ -19,4 +19,6 @@
             </div>
         </div>
     </div>
+
+    <img src="{{ "/assets/images/fleche.svg"  | relative_url}}" alt="My Happy SVG" class="nextimg" />
 </div>
