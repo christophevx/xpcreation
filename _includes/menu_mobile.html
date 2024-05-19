@@ -1,0 +1,29 @@
+{% assign sorted_pages = site.pages | sort:"order" %}
+
+<div class="site-mobile-menu">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close mt-3">
+        <span class="icon-close2 js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"><ul class="site-nav-wrap">
+        <ul>
+            {% assign current_dir = "/" %}
+            {% for node in sorted_pages %}
+                {% if current_dir != node.dir %}
+                    {% if current_dir != "/" %}
+                    </li>
+                    </ul>
+                    {%- endif -%}
+                    {% assign current_dir = node.dir %}
+                    {% if current_dir != "/" %}
+                    <li class="has-children">
+                    {{ node.dir | url_decode | replace: "/", "" }}
+                    <ul class="dropdown arrow-top">
+                    {%- endif -%}
+                {%- endif -%}
+                <li{% if node.url == page.url %} class="active"{% endif %}><a href='{{ node.url | relative_url }}'><span>{{node.title}}</span></a></li>
+            {%- endfor -%}
+        </ul>
+    </div>
+</div>

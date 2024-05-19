@@ -2,39 +2,7 @@
 <html lang="en">
 {% include head.html %}
 <body>
-    
-    <div class="site-mobile-menu">
-        <div class="site-mobile-menu-header">
-          <div class="site-mobile-menu-close mt-3">
-            <span class="icon-close2 js-menu-toggle"></span>
-          </div>
-        </div>
-        <div class="site-mobile-menu-body"><ul class="site-nav-wrap">
-                  <li class="active"><a href="index.html"><span>Home</span></a></li>
-                  <li class="has-children"><span class="arrow-collapse collapsed" data-toggle="collapse" data-target="#collapseItem0" aria-expanded="false"></span>
-                    <a href="about.html"><span>Dropdown</span></a>
-                    <ul class="collapse" id="collapseItem0" style="">
-                      <li><a href="#">Menu One</a></li>
-                      <li><a href="#">Menu Two</a></li>
-                      <li><a href="#">Menu Three</a></li>
-                      <li class="has-children"><span class="arrow-collapse collapsed" data-toggle="collapse" data-target="#collapseItem1"></span>
-                        <a href="#">Dropdown</a>
-                        <ul class="collapse" id="collapseItem1">
-                          <li><a href="#">Menu One</a></li>
-                          <li><a href="#">Menu Two</a></li>
-                          <li><a href="#">Menu Three</a></li>
-                          <li><a href="#">Menu Four</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  <li><a href="listings.html"><span>Listings</span></a></li>
-                  <li><a href="about.html"><span>About</span></a></li>
-                  <li><a href="blog.html"><span>Blog</span></a></li>
-                  <li><a href="contact.html"><span>Contact</span></a></li>
-                </ul></div>
-      </div>
-
+    {% include menu_mobile.html %}
     {% include menu2.html %}
     {% include video.html %}
     {{ content }}
