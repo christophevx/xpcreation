@@ -1,7 +1,6 @@
 ---
 title: Monter un escalier
-image: left
-background-color: white
+image-position: left
 vignette: https://www.batiproduits.com/img/escalier-autoportant-en-bois-avec-marches-en-console-ego-zero-007748155-product_maxi.jpg
 ---
 

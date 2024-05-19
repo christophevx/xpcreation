@@ -4,7 +4,7 @@ layout: default
 
 {% for post in site.accueil %}
 
-    {% if post.image == "left" %}
+    {% if post.image-position == "left" %}
     <div class="site-section">
         <div class="container-fluid">
             <div class="row">
@@ -17,7 +17,7 @@ layout: default
             </div>
         </div>
     </div>
-    {% elsif  post.image == "right" %}
+    {% elsif  post.image-position == "right" %}
     <div class="site-section">
         <div class="container-fluid">
             <div class="row">
