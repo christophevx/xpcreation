@@ -6,9 +6,10 @@
                     <img class="active" src="">
                 </div>
                 <ul class="image-list image-list{{ include.post.title | remove: " " }}">
+                    {{ gallery_path }}assets/images/{{ include.collection }}/{{ include.post.title}}
                     {% capture gallery_path %}assets/images/{{ include.collection }}/{{ include.post.title}}/{% endcapture %} {% for image in site.static_files %} {% if image.path contains gallery_path %}
                     <li class="image-item">
-                        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                        <img src="{{ image.path | relative_url }}" alt="image" />
                     </li>{% endif %} {% endfor %}
                 </ul>
             </div>
