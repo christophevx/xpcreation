@@ -872,3 +872,8 @@ div.container-contact100-form-btn:nth-child(8) > div:nth-child(1) > input:nth-ch
     width: 100%;
     padding: 1em;
 }
+
+a.socialnetworkbtn {
+    color: white;
+    text-decoration: none;
+}
