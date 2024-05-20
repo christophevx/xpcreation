@@ -643,6 +643,7 @@ blockquote {
     padding: 2em;
     font-style: italic;
     font-size: 2em;
+    overflow: auto;
 }
 
 /************************
